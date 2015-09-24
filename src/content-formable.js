@@ -1,5 +1,7 @@
-var url2form = require('../node_modules/url2form.js/url2form');
-var unindentor = require('../node_modules/unindentor.js/unindentor');
+var url2form = require('../node_modules/url2form.js/src/url2form');
+var unindentor = require('../node_modules/unindentor.js/src/unindentor');
+
+module.exports = contentFormable;
 
 var defaultOptions = {
   editableAttribute: 'data-cf-editable',
@@ -8,7 +10,7 @@ var defaultOptions = {
   hiddenClass: 'cf-hidden'
 };
 
-function contentFormableConstructor(formName, options) {
+function contentFormable(formName, options) {
 
   var form = document.forms[formName];
   if (!form) {
@@ -105,5 +107,3 @@ function extend(defaults, options) {
   }
   return extended;
 }
-
-return contentFormableConstructor;
