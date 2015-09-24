@@ -1,0 +1,30 @@
+{
+  "name": "content-formable.js",
+  "version": "1.0.0",
+  "description": "A lib to simulate content-editable with textarea",
+  "main": "build/content-formable.min.js",
+  "dependencies": {},
+  "devDependencies": {
+    "unindentor.js": "^1.0.0",
+    "url2form.js": "^2.0.0"
+  },
+  "scripts": {
+    "build": "webpack src/content-formable.js dist/content-formable.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzi/content-formable.js.git"
+  },
+  "keywords": [
+    "content-editable",
+    "textarea",
+    "form"
+  ],
+  "author": "Thomas ZILLIOX (http://tzi.fr)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tzi/content-formable.js/issues"
+  },
+  "homepage": "https://github.com/tzi/content-formable.js#readme"
+}
